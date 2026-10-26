@@ -74,7 +74,7 @@ created: "2026-10-05 17:36"
 modified: "2026-10-20 15:10"
 
 # Stav dokumentu – default "backlog"
-status: "backlog"
+status: "in-progress"
 
 # Viditeľnosť – default "public"
 privacy: "public"
@@ -136,24 +136,23 @@ fm_reserved2: ""
 # 🙋 About Me
 
 ## 🔖 Základné informácie
-- Meno a priezvisko
-- Študentský GitHub profil (link)
-- Kontaktný e-mail
+- Meno a priezvisko: Viktor Hutsuliak
+- Študentský GitHub profil: [github.com/Vtoshik](https://github.com/Vtoshik)
+- Kontaktný e-mail: <!-- TODO: doplniť e-mail -->
 
 ## 🎯 Profesijné záujmy
-- Oblasti, ktoré ma bavia (IT, dizajn, podnikanie, …)
-- Aké skúsenosti by som chcel získať
+Najviac ma zaujíma backend a umelá inteligencia, a s nimi aj práca s dátami. Baví ma, keď viem, ako systém funguje vnútri a prečo je postavený práve takto.
+
+V tomto predmete by som chcel postaviť niečo fyzické, nie ďalší program, ktorý žije len na obrazovke. Rád by som získal skúsenosť s prepojením softvéru a hardvéru.
 
 ## 💡 Moje hobby / záujmy
-- Šport, hudba, varenie, cestovanie …
-- Čokoľvek, čo odhaľuje „ľudskú stránku"
+Rád programujem a premýšľam nad architektúrou softvéru, hlavne keď do toho vstupuje AI. Mimo počítača chodím do posilňovne a hrám stolný tenis.
 
 ## 🚀 Očakávania od predmetu
-- Čo chcem dosiahnuť v rámci kurzu
-- Čo očakávam od spolupráce s tímom a komunitou
+Chcem pracovať v tíme s kamarátmi a naučiť sa niečo nové, čo by som si sám od seba nevybral. Dôležité je pre mňa aj to, aby výsledok nebol len kód v repozitári, ale aj niečo, čoho sa dá dotknúť.
 
 ## 🚀 Čo viem ponúknuť
-- Čo chcem ponúknuť v rámci kurzu
+Viem programovať a dobre sa orientujem v GitHube, takže môžem tímu pomôcť s repozitárom, vetvami a spoločným workflow. Mám skúsenosti s Enterprise Architect a s modelovaním architektúry. Pohodlne komunikujem po anglicky, čo sa hodí pri dokumentácii a zdrojoch.
 
 ## Navigácia
 - [↩️ Späť](../index.md)

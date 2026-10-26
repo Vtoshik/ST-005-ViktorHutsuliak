@@ -74,7 +74,7 @@ created: "2026-10-05 17:36"
 modified: "2026-10-20 15:10"
 
 # Stav dokumentu – default "backlog"
-status: "backlog"
+status: "in-progress"
 
 # Viditeľnosť – default "public"
 privacy: "public"
@@ -138,8 +138,8 @@ fm_reserved2: ""
 ## 🔖 Identifikácia
 ## 1️⃣ Názov projektu
 *(Jasný, výstižný, inšpiratívny – ako by sa mal objaviť na plagáte.)*
-- **Názov projektu:** `PRJ_XXX_<Názov>_<ST_XXX>_<ST_XXX>`
-- **Stručný popis:** 2–3 vety
+- **Názov projektu:** HackLock
+- **Stručný popis:** Edukačný zámok s klávesnicou postavený na ESP32, na ktorom si študenti prakticky vyskúšajú útok cez časový postranný kanál (timing side channel). Firmvér existuje v dvoch verziách, zámerne slabej a zabezpečenej, takže únik sa dá zmerať a potom na reálnom hardvéri aj odstrániť.
 
 ## 2️⃣ Členovia tímu
 
@@ -156,12 +156,18 @@ fm_reserved2: ""
 - Aký problém rieši
 
 ## 4️⃣ Cieľ a pridaná hodnota projektu
-- Aký je finálny cieľ
-- Ako spoznáme, že projekt je úspešný
+- Finálny cieľ: urobiť neviditeľný typ chyby, rozdiel pár mikrosekúnd v odozve, viditeľným a merateľným, a potom ukázať, že oprava funguje.
+- Úspech spoznáme podľa toho, že pomocou meracieho nástroja vieme na slabom firmvéri uhádnuť PIN znak po znaku a na zabezpečenom firmvéri už nie.
 
 ## 5️⃣ Popis riešenia
-- Stručne opíšte architektúru, nástroje a technológie, ktoré použijete.
-- Zamerajte sa na **"čo"** riešite, nie ešte "ako".
+HackLock je malá krabička s klávesnicou. Používateľ zadá PIN a ak je správny, servo otvorí veko a LED sa rozsvieti nazeleno. Zaujímavé je, ako firmvér PIN kontroluje:
+
+- Slabý (učebný) firmvér porovnáva zadaný PIN s tajným znak po znaku a zareaguje hneď pri prvom nesprávnom znaku. Čas odozvy tak závisí od počtu správnych znakov na začiatku, čo je klasický timing side channel.
+- Zabezpečený firmvér porovnáva celý PIN v konštantnom čase, takže čas odozvy už nič neprezrádza.
+
+Pomocný nástroj na notebooku meria čas odozvy zariadenia cez sériovú linku, aby sa obe verzie firmvéru dali porovnať na rovnakom hardvéri.
+
+Hardvér: ESP32, klávesnica, servo, LED. Poznámka k rozsahu: HackLock je učebná pomôcka. Ukazuje známu triedu zraniteľností na vlastnom zariadení a je určená na výuku a samoštúdium.
 
 ## 6️⃣ Projektový plán
 - Odhadovaný čas na prácu: _x hodín / týždeň_
@@ -179,12 +185,12 @@ fm_reserved2: ""
   - [ ] dokumentáciu
 
 ## 7️⃣ Zákazník a hodnoty
-- Kto by mohol byť používateľom projektu?
-- Čo mu to prinesie?
+- Používateľmi sú študenti a učitelia, ktorí sa učia o bezpečnosti zariadení a postranných kanáloch.
+- Prinesie im to možnosť vidieť, zmerať a opraviť zraniteľnosť na fyzickom zariadení, nie len čítať o nej v teórii.
 
 ## 8️⃣ Očakávané výstupy
-- Dokumentácia: (napr. README, KNIFE článok, demo stránka...)
-- Artefakty: (napr. prototyp, appka, vizualizácia...)
+- Dokumentácia: README, popis firmvéru a meracieho nástroja, KNIFE článok.
+- Artefakty: fyzický zámok HackLock, dve verzie firmvéru (slabá a zabezpečená), nástroj na meranie odozvy.
 
 ## 📚 Kontext
 - KNIFE príspevky, literatúra, inšpirácie
