@@ -145,15 +145,16 @@ fm_reserved2: ""
 
 | ST ID | Meno | Rola v tíme | Kompetencie |
 |-------|------|-------------|-------------|
-| ST001 |      | Project Lead | koordinácia |
-| ST002 |      | Developer | implementácia |
-| ST003 |      | Designer | UI/UX |
+| ST-003 | Nazar Bohach ([devNazarBohach](https://github.com/devNazarBohach)) | Firmvér a bezpečnosť | firmvér pre ESP32, timing side channel |
+| ST-028 | Mykola Malesh ([MykolaMalesh](https://github.com/MykolaMalesh)) | Fabrikácia a kryt | návrh a výroba krabičky |
+| ST-005 | Viktor Hutsuliak ([Vtoshik](https://github.com/Vtoshik)) | Dokumentácia, 7Ds a diagramy | dokumentácia, modelovanie architektúry, GitHub |
 
 ## 3️⃣ Motivácia tímu
-- Prečo ste si vybrali tento projekt?
-- Aký osobný alebo profesný zmysel má pre vás riešenie tejto témy?
-- Prečo je projekt dôležitý
-- Aký problém rieši
+Chceli sme postaviť niečo, čoho sa dá dotknúť, nie ďalší projekt, ktorý existuje len ako kód. HackLock spája softvér s hardvérom: firmvér, elektroniku a fyzický kryt, takže každý z nás sa môže venovať tomu, čo ho baví.
+
+Zaujala nás aj téma. Rozdiel v odozve na pár mikrosekúnd je chyba, ktorú nikto nevidí, kým ju nezmeria. Na vlastnom zariadení si ju vieme ukázať, odmerať a potom opraviť, a to je lepší spôsob učenia ako čítať o nej v učebnici.
+
+Navyše pracujeme v tíme kamarátov a každý má jasnú rolu, čo nám dáva priestor naučiť sa niečo nové.
 
 ## 4️⃣ Cieľ a pridaná hodnota projektu
 - Finálny cieľ: urobiť neviditeľný typ chyby, rozdiel pár mikrosekúnd v odozve, viditeľným a merateľným, a potom ukázať, že oprava funguje.
